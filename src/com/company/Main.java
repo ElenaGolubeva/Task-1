@@ -4,13 +4,13 @@ public class Main {
 
     public static int remainder(int c, int d){
         return c%d;
-    }
+    } //остаток от деления
 
-    public static double triArea(int c, int d){
+    public static double triArea(int c, int d){  //площадь треугольника
         return 0.5*c*d;
     }
 
-    public static int animals(int chickens, int cows, int pigs){
+    public static int animals(int chickens, int cows, int pigs){   //подсчет количества ног у животных
         int chickensLegs=2*chickens;
         int cowsLegs=4*cows;
         int pigsLegs=4*pigs;
@@ -18,7 +18,7 @@ public class Main {
         return chickensLegs+cowsLegs+pigsLegs;
     }
 
-    public static boolean profitableGamble(double prob, double prize, double pay){
+    public static boolean profitableGamble(double prob, double prize, double pay){   //проверка правильности рассчета
         if (prob*prize>pay){
             return true;
         } else {
@@ -26,7 +26,7 @@ public class Main {
         }
     }
 
-    public static String operation(double N, int a, int b){
+    public static String operation(double N, int a, int b){   //операции с a и b для получения N
         if (a+b==N){
             return "added";
         } else if (a-b==N){
@@ -40,12 +40,12 @@ public class Main {
         }
     }
 
-    public static int ctoa(char x){
+    public static int ctoa(char x){   // определение ascii для символов
         int ascii = x;
         return ascii;
     }
 
-    public static int addUpTo(int x){
+    public static int addUpTo(int x){   //сумма подряд идущих чисел
         int rez=0;
         for (int i=1; i<=x; i++){
             rez+=i;
@@ -55,9 +55,9 @@ public class Main {
 
     public static int nextEdge(int a,int b){
         return a+b-1;
-    }
+    }  //нахождение третьей возможно наибольшей стороны треугольника
 
-    public static int sumOfCubes(int [] array){
+    public static int sumOfCubes(int [] array){  //сложение кубов элементов массива
         int rez=0;
         for (int i=0; i<array.length; i++){
             rez= rez+array[i]*array[i]*array[i];
@@ -65,7 +65,7 @@ public class Main {
         return rez;
 
     }
-    public static boolean abcmath(int a,int b,int c){
+    public static boolean abcmath(int a,int b,int c){    // истинность деления rez на с
         int rez=0;
         for (int i=0; i<=b; i++){
             rez=rez+a;

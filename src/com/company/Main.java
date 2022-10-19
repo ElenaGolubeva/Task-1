@@ -11,19 +11,12 @@ public class Main {
     }
 
     public static int animals(int chickens, int cows, int pigs){   //подсчет количества ног у животных
-        int chickensLegs=2*chickens;
-        int cowsLegs=4*cows;
-        int pigsLegs=4*pigs;
 
-        return chickensLegs+cowsLegs+pigsLegs;
+        return 2*chickens+4*cows+4*pigs;
     }
 
     public static boolean profitableGamble(double prob, double prize, double pay){   //проверка правильности рассчета
-        if (prob*prize>pay){
-            return true;
-        } else {
-            return false;
-        }
+        return prob*prize>pay;
     }
 
     public static String operation(double N, int a, int b){   //операции с a и b для получения N
@@ -41,8 +34,8 @@ public class Main {
     }
 
     public static int ctoa(char x){   // определение ascii для символов
-        int ascii = x;
-        return ascii;
+
+        return x;
     }
 
     public static int addUpTo(int x){   //сумма подряд идущих чисел
